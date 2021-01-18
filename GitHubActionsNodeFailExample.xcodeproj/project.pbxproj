@@ -76,7 +76,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "echo \"Failing example, running `node --version` without shell fix.\"\n\nnode --version\n";
+			shellScript = "echo \"Failing example, running `node --version` without shell fix.\"\n\n/usr/bin/env node --version\n";
 		};
 		376DAECA25B6466E006FEC77 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -93,7 +93,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "echo \"Successful example, running `node --version` with shell fix.\"\n\nnode --version\n\n";
+			shellScript = "echo \"Successful example, running `node --version` with shell fix.\"\n\n/usr/bin/env node --version\n\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
