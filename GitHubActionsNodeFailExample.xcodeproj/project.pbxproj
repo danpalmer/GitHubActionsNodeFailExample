@@ -3,8 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
+
+/* Begin PBXAggregateTarget section */
+		376DAEC325B64550006FEC77 /* Example */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 376DAEC425B64550006FEC77 /* Build configuration list for PBXAggregateTarget "Example" */;
+			buildPhases = (
+				376DAEC825B64555006FEC77 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Example;
+			productName = Example;
+		};
+/* End PBXAggregateTarget section */
 
 /* Begin PBXGroup section */
 		376DAEBC25B64532006FEC77 = {
@@ -20,6 +34,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					376DAEC325B64550006FEC77 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
 			};
 			buildConfigurationList = 376DAEC025B64532006FEC77 /* Build configuration list for PBXProject "GitHubActionsNodeFailExample" */;
 			compatibilityVersion = "Xcode 9.3";
@@ -33,9 +52,31 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				376DAEC325B64550006FEC77 /* Example */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		376DAEC825B64555006FEC77 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "node --version\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
 		376DAEC125B64532006FEC77 /* Debug */ = {
@@ -50,6 +91,24 @@
 			};
 			name = Release;
 		};
+		376DAEC525B64550006FEC77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H94RX56UDD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		376DAEC625B64550006FEC77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H94RX56UDD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -58,6 +117,15 @@
 			buildConfigurations = (
 				376DAEC125B64532006FEC77 /* Debug */,
 				376DAEC225B64532006FEC77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		376DAEC425B64550006FEC77 /* Build configuration list for PBXAggregateTarget "Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				376DAEC525B64550006FEC77 /* Debug */,
+				376DAEC625B64550006FEC77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
