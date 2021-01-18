@@ -11,7 +11,8 @@
 			isa = PBXAggregateTarget;
 			buildConfigurationList = 376DAEC425B64550006FEC77 /* Build configuration list for PBXAggregateTarget "Example" */;
 			buildPhases = (
-				376DAEC825B64555006FEC77 /* ShellScript */,
+				376DAECA25B6466E006FEC77 /* ShellScript */,
+				376DAEC825B64555006FEC77 /* Run Script */,
 			);
 			dependencies = (
 			);
@@ -58,9 +59,27 @@
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		376DAEC825B64555006FEC77 /* ShellScript */ = {
+		376DAEC825B64555006FEC77 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"Failing example, running `node --version` without shell fix.\"\n\nnode --version\n";
+		};
+		376DAECA25B6466E006FEC77 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -74,7 +93,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "node --version\n";
+			shellScript = "echo \"Successful example, running `node --version` with shell fix.\"\n\nnode --version\n\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
